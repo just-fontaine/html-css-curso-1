@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/cursoemvideo02.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        nav {
+            background-color: rgb(58, 58, 58);
+            padding: 3px;
+            border-radius: 0.3em;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315)
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            padding: 1em;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
+            border-radius: 0.3em;
+        }
+
+        article {
+            background-color: lightgrey;
+        }
+
+        article > aside {
+            background-color: rgb(134, 134, 134);
+        }
+
+        main {
+            display: block;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
+            border-radius: 30px 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        #paragrafo-noticia-1 {
+            padding: 1em;
+            text-indent: 25px;
+        }
+
+        #credito-noticia-1 {
+            padding: 0em 1em 1em 1em;
+            font-weight: bold;
+        }
+
+        #titulo-noticia-1 {
+            padding: 0.5em 0em 0em 1em;
+        }
+
+        #circulo {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            
+            margin: auto;
+            margin-bottom: 40px;
+            margin-top: 40px;
+
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #circulo > p {
+            font-weight: bold;
+            user-select: none;
+        }
+
+        #circulo:hover {
+            background-color: rgba(61, 1, 110, 0.747);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h1>Esportes Política Tecnologia</h1>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2 id="titulo-noticia-1">Noticia Sobre o Brasil</h2>
+                <aside>
+                    <p id="paragrafo-noticia-1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A provident veniam, doloremque error quam commodi, magnam at deleniti reprehenderit repellat est fuga nobis itaque blanditiis dicta aperiam nostrum quia, in ratione velit! Cum, adipisci? Animi veniam error aliquid quaerat? Odio doloremque consequatur quaerat architecto, ipsam numquam asperiores expedita porro reprehenderit temporibus tempore exercitationem aliquam, earum voluptatum totam iste? Iste quas voluptas modi non esse quia omnis minus repellendus? Nemo saepe quibusdam maxime voluptates quas, vero recusandae qui veritatis est dignissimos atque sed ut, blanditiis perspiciatis at minima fugiat modi numquam quia placeat molestiae excepturi rem illum? Omnis consequatur sint modi?
+                    </p>
+                    <p id="credito-noticia-1">
+                        -Artigo escrito por José da Silva
+                    </p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido Pelo Curso em Video</p>
+    </footer>
+
+    <div id="circulo">
+        <p>circulo e tal</p>
+    </div>
+</body>
+</html>

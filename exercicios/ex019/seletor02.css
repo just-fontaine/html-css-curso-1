@@ -1,0 +1,33 @@
+body {
+    background-image: linear-gradient(to right, rgb(112, 0, 146), rgb(37, 23, 116));
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: rgb(0, 151, 151);
+}
+
+h2 {
+    color: rgb(0, 26, 170);
+}
+
+#titulo-principal {
+    background-color: rgb(19, 0, 128);
+    color: white;
+    text-align: center;
+}
+
+.titulo-secundario {
+    text-align: center;
+    color: blueviolet;
+}
+
+p {
+    text-align: justify;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    padding-inline: 1em;
+}

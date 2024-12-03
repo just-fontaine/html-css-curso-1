@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/cursoemvideo02.ico" type="image/x-icon">
+    <title>Formatação de Texto</title>
+    <style>
+        body{
+            font-size: 17px;
+            color: white;
+            background-color: black;
+        }
+        #creditos{
+            margin-left: 300px;
+        }
+        mark{
+            color: white;
+        }
+        .codigos{
+            white-space: pre;
+            padding-left: 20px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    
+    <h2>Negrito</h2>
+    <p><strong>Esse texto está em negrito!</strong></p>
+    
+    <h2>Itálico</h2>
+    <p><em>Esse texto está em itálico!</em></p>
+    
+    <h2>Marca-Texto</h2>
+    <p><mark style="background-color: purple;">Marcação do texto...</mark></p>
+    
+    <h2>Del</h2>
+    <p><del>Texto Deletado</del></p>
+    
+    <h2>Insert</h2>
+    <p><ins>Texto Inserido</ins></p>
+
+    <h2>Inferior</h2>
+    <p>H<sub>2</sub>O</p>
+
+    <h2>Superior</h2>
+    <p>X<sup>2</sup></p>
+
+    <h2>Códigos</h2>
+
+    <h3>Código Python abaixo</h3>
+    <p>
+        <pre><code class="codigo">
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'O número é par!')
+else:
+    print('O número é impar!')
+print('FIM DO PROGRAMA')
+        </code></pre>
+    </p>
+    
+
+    <h3>Código JavaScript abaixo</h3>
+
+    <p>
+        <pre class="codigo"><code>
+document.getElementById('Teste')
+        </code></pre>
+    </p>    
+    
+    <h2>Citação</h2>
+    <p><q>Se você não sabe explicar em voz alta é porque não aprendeu direito.</q></p>
+    <p id="creditos"><em>
+        -Programador Python
+    </em></p>
+
+    <h2>BlockQuote</h2>
+    <blockquote cite="https://codepen.io/pen/">
+        <p>Citação com o atributo cite.</p>
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>
+        <abbr title="HyperText Markup Language">HTML</abbr>
+    </p>
+
+    <p>
+        <abbr title="Cascading Style Sheets">
+            CSS
+        </abbr>
+    </p>
+</body>
+</html>

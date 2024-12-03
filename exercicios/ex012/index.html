@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/cursoemvideo02.ico" type="image/x-icon">
+    <title>Videos</title>
+    <style>
+        iframe {
+            width: 500px;
+            height: 350px
+        }
+    </style>
+    <script>
+        function keepMuted() {
+            let video = document.getElementById('myVideo');
+            video.muted = true;
+            video.addEventListener('volumechange', function() {
+                video.muted = true;
+            })
+        }
+    </script>
+</head>
+    <body>
+        <h1>Vídeos no Site</h1>
+        <video width="500" controls poster="imagens/poster.png" id="myVideo"
+         onloadeddata="keepMuted()">
+            <source src="midia/1080p60.mp4" type="video/mp4">
+            <source src="midia/720p30.mp4" type="video/mp4">
+            <source src="midia/720p30.webm" type="video/webm">
+            <p>
+                Não foi possível carregar o vídeo.
+            </p>
+    </video>
+    <div>
+        <iframe src="https://www.youtube.com/embed/cJWYfTbJOHs?si=sVz5omriI1_U0Jxi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
