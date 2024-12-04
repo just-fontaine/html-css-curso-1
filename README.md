@@ -14,4 +14,4 @@
  MÓDULO 5 - Novas tecnologias
     Flexbox, Grid Layout, projeto final.
 
-<a href="https://just-fontaine.github.io/html-css-curso-1/exercicios/ex001/index.html">Abrir o exercício 001</a>
+<a href="https://just-fontaine.github.io/html-css-curso-1/exercicios/ex001/index.html" target="_blank">Abrir o exercício 001</a>
