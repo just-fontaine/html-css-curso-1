@@ -114,6 +114,12 @@ nav a {
     }
 }
 
+@media (width < 720px) {
+    nav {
+        display: none;
+    }
+}
+
 main {
     background-color: white;
 
