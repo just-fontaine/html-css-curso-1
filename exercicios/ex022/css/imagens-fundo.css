@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.quadrado {
+    display: inline-block;
+    margin: 3%;
+    width: 20vw;
+    height: 20vw;
+    background-color: lightgray;
+    border: 0.2vw solid black;
+    border-radius: 3%;
+    transition: all 0.3s ease;
+    padding-bottom: 1vw;
+}
+
+.quadrado:hover {
+    border-color: white;
+    transition-duration: 0.1s;
+    transform: scale(1.03);
+}
+
+#q1 {
+    background-color: skyblue;
+}
+
+#q2 {
+    background-image: linear-gradient(to bottom, darkblue, rgba(0, 0, 46, 0.774));
+}
+
+#q3 {
+    background-image: url('../img/gato-programando.png');
+    background-size: 100% 100%;
+}
+
+body {
+    background-image: url('../img/espaco-sideral.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
