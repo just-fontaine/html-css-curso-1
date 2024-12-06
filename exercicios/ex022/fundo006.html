@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/cursoemvideo02.ico" type="image/x-icon">
+    <title>Vertical Alignment</title>
+    <style>
+        .conteiner {
+            position: relative;
+            
+            height: 90vh;
+            padding: 10px;
+            
+            background-color: purple;
+            background-image: url('img/target001.png');
+            background-size: 100% 100%;
+        }
+
+        #content {
+            position: absolute;
+            
+            height: 40%;
+            width: 40%;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: yellow;
+            background-image: url('img/target001.png');
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="conteiner">
+        <article id="content">
+
+        </article>
+    </section>
+</body>
+</html>
