@@ -6,7 +6,64 @@
     <link rel="shortcut icon" href="img/cursoemvideo02.ico" type="image/x-icon">
     <title>Bigger Tables</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            border: 1px solid rgb(255, 0, 0);
+
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: black;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n-1) {
+            background-color: white;
+            color: black;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 2.5%;
+        }
     </style>
 </head>
 <body>
@@ -14,18 +71,160 @@
     <!-- Bigger Tables Anatomy
         
         TABLE
+            CAPTION
             THEAD
-                TR
-                TD
-                TH
+                TR, TD, TH
             TBODY
-                TR
-                TD
-                TH
+                TR, TD, TH
             TFOOT
-                TR
-                TD
-                TH
+                TR, TD, TH
     -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.144.597</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.018.650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.484.466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.337.357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.273.227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.015.268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.778.986</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.298.696</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.777.225</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.572.866</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">881.935</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">845.731</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">605.761</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi nam quos, ratione repudiandae laborum officia, qui nostrum consequuntur veritatis sint, architecto consequatur sapiente dignissimos! Molestias sequi at officiis laudantium delectus.
+    Saepe, eum blanditiis, dolorum quibusdam sapiente libero, nam ullam harum possimus hic distinctio minus iure! Exercitationem, voluptate? Nesciunt, et, dolores doloribus magni commodi earum, eaque est laborum molestiae blanditiis excepturi.
+    Aliquam odit tempora ducimus tenetur eum impedit et deserunt at enim harum esse sequi architecto corrupti quisquam expedita est aut, unde animi magni accusamus possimus ipsum sapiente deleniti repellendus. Cumque.
+    Sequi deserunt, facilis repellendus quisquam ut delectus alias corrupti amet reprehenderit quo iste recusandae eligendi eum perferendis impedit iure doloribus ducimus ex nobis at, perspiciatis nostrum nihil aliquid. Harum, modi?
+    Voluptas tenetur minus dolorum rerum quas dicta fuga cupiditate praesentium, voluptatibus, sed suscipit error nostrum est? Obcaecati ipsam, ipsa eius nostrum commodi quia hic, laborum, sunt eligendi aspernatur illo iure!
+    Exercitationem, sit vitae! Molestias temporibus, porro vitae perspiciatis ex doloremque excepturi maxime iure saepe sequi assumenda voluptatibus, dicta id facilis quod. Nam pariatur ipsam repellat obcaecati quo vel quisquam itaque.
+    Ex, commodi praesentium tempora molestias, cumque dolor non facere necessitatibus tempore ipsa maiores mollitia perspiciatis libero blanditiis alias! Sapiente earum necessitatibus ea fugit aliquam nesciunt. Quo earum minus incidunt sapiente.
+    Vel eaque consequuntur numquam praesentium facilis deleniti facere accusamus dicta ratione temporibus in quis corrupti sint fuga consectetur libero provident at nostrum, natus laborum? Saepe soluta exercitationem vel nobis a!
+    Nihil dolorem possimus alias blanditiis ullam, itaque, laborum quaerat officiis autem cupiditate maiores accusantium maxime ducimus in ipsa suscipit eos fugiat ut totam? Voluptas modi recusandae provident perspiciatis esse quas?
+    Odit cum quod maiores, exercitationem, alias dolor ducimus tenetur, saepe perferendis provident laboriosam numquam placeat sunt at tempore rerum vel expedita quaerat reprehenderit quasi! Perspiciatis amet reprehenderit quisquam doloremque accusamus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, voluptate quidem voluptatum sed aliquid, ullam deleniti minima nostrum amet eius sapiente illo qui enim distinctio architecto repellat earum explicabo quis!
+    Sint quos maiores provident, dicta ipsam magnam quae, laudantium expedita, modi facere obcaecati sequi nesciunt recusandae doloribus sit? Ea accusantium velit voluptatum, accusamus dolores fugit cum laborum tempora obcaecati sint?
+    Pariatur ullam obcaecati quos laborum molestiae nihil reprehenderit dicta modi veniam expedita laudantium accusamus similique repellendus molestias facilis sed, temporibus libero, quibusdam, ab ipsam iure provident vitae praesentium consectetur. Officia!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae fugit nobis quis ipsum labore, illum, repudiandae corporis nesciunt aspernatur illo aut explicabo libero fuga eum dolores obcaecati corrupti? Voluptas, ipsam.
+    Libero cupiditate asperiores saepe neque placeat fugit corrupti porro amet. Id voluptas, aliquid pariatur voluptatibus quasi non omnis eveniet facere suscipit nisi nesciunt velit, asperiores voluptatum error odio dicta inventore?
+    Autem, quas. Nostrum, molestias aperiam mollitia atque explicabo sint iure, quos optio provident praesentium inventore eveniet, illo nisi! Minima voluptates obcaecati aperiam expedita, est nihil explicabo aspernatur dolores delectus ducimus?
+    Et molestiae ab labore a illum fugiat, libero animi. Laborum, consequatur velit voluptate officia voluptatibus nostrum. Non cumque voluptatibus fuga et quos ad? Repellendus earum praesentium voluptate harum labore ducimus?
+    Tenetur a quisquam accusantium autem aspernatur, sed cumque quia laudantium ea numquam explicabo inventore commodi enim, earum dignissimos. Omnis molestiae officiis assumenda consectetur, et soluta minus porro cum fugit! Repellendus?
+    Ab rem, aspernatur pariatur illo odit porro quidem omnis. Ducimus, cumque nemo quae temporibus esse dicta voluptatum corrupti. Fugit illo distinctio fugiat impedit praesentium quam quibusdam pariatur molestias harum numquam!
+    Doloribus, quod dolor sit totam quisquam officiis ex nihil aspernatur quo in minima aut a consectetur quidem animi itaque quibusdam distinctio vel similique consequuntur? Quibusdam nemo dicta accusantium neque tempore?
+    Ab, quo illum molestiae doloremque numquam minima, neque perspiciatis tempora laborum facilis, quam temporibus ratione tempore animi consequuntur eaque consectetur corporis quisquam blanditiis autem minus expedita amet reiciendis adipisci? Nostrum?
+    Quod praesentium quasi veniam laudantium quia fugiat modi possimus laboriosam inventore accusamus molestiae optio, error magnam, similique at beatae cum explicabo ut necessitatibus eaque aliquid iusto impedit non. Laboriosam, assumenda!
+    Blanditiis facilis tempora a numquam, ipsa quam voluptas eaque? Labore delectus earum autem temporibus, quas velit. Magnam fuga ea eveniet minima suscipit obcaecati nemo, doloremque eius quidem mollitia! Explicabo, saepe.</p>
 </body>
 </html>
