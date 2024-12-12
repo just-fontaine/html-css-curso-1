@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/cursoemvideo02.ico" type="image/x-icon">
+    <title>Formulário</title>
+    <style>
+        /* -webkit = safari e chrome */
+        /* -moz = firefox */
+        .nao-selecionavel {
+                user-select: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+
+                font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on" class="nao-selecionavel">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasculino" value="M" required  >
+            <label for="imasculino"> Masculino</label> <br>
+            
+            <input type="radio" name="sexo" id="ifeminino" value="F" required   >
+            <label for="ifeminino"> Feminino</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="futebol" id="ifutebol">
+            <label for="ifutebol">Futebol</label> <br>
+            
+            <input type="checkbox" name="basquete" id="ibasquete">
+            <label for="ibasquete">Basquete</label> <br>
+
+            <input type="checkbox" name="natacao" id="inatacao">
+            <label for="inatacao">Natação</label> <br>
+
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">Tênis</label> <br>
+
+            <input type="checkbox" name="volei" id="ivolei">
+            <label for="ivolei">Vôlei</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
