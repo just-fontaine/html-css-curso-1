@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Configurações de Retrato */
+
+body {
+    background-image: url("../img/portrait.jpg");
+    background-position: center bottom;
+}
